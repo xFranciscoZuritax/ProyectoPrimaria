@@ -1,0 +1,79 @@
+/*CSS GLOBAL*/
+* {
+    margin: 0;
+}
+
+/*CSS EN EL HEADER*/
+header {
+    /*border: 1px solid red*/
+    background-color: #1F8A70;
+}
+
+nav {
+    height: 4rem;
+    display: flex;
+    background-color: #FC7300;
+}
+
+#logoUntref {
+    width: 18%;
+    padding-left: 6rem;
+    padding-top: 1rem;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+a {
+    margin-right: 24px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-right: 1rem;
+    padding-left: 1rem;
+}
+/*ANIMACIONES DEL HEADER*/
+li:hover {
+background-color: #EFF5F5;
+transition: all 0.4s ease-in-out;
+}
+
+/*EDITAMOS EL BODY*/
+
+body {
+    
+    background-color: #EFF5F5;
+}
+
+#carouselExample
+{
+  padding: 2rem;
+}
+
+#QuienesSomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color:#EFF5F5;
+}
+
+#qstexto {
+    text-align: center;
+}
+
+#elegirnos {
+    background-color: #00425A;
+}
+
+h2 {
+    color:#1F8A70;
+}
