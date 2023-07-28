@@ -1,79 +1,80 @@
-/*CSS GLOBAL*/
+/*Aplicando CSS global*/
 * {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
-/*CSS EN EL HEADER*/
-header {
-    /*border: 1px solid red*/
-    background-color: #1F8A70;
+img {
+ width: 100%;
 }
 
-nav {
-    height: 4rem;
-    display: flex;
-    background-color: #FC7300;
+video {
+    width: 100%;
 }
 
-#logoUntref {
-    width: 18%;
-    padding-left: 6rem;
-    padding-top: 1rem;
-}
-
-.menu {
-    display: flex;
+ul {
     list-style: none;
 }
 
 a {
-    margin-right: 24px;
     text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-li {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    margin-right: 1rem;
-    padding-left: 1rem;
-}
-/*ANIMACIONES DEL HEADER*/
-li:hover {
-background-color: #EFF5F5;
-transition: all 0.4s ease-in-out;
-}
-
-/*EDITAMOS EL BODY*/
 
 body {
-    
-    background-color: #EFF5F5;
+    font-family: 'Poppins', sans-serif;
+}
+/*Aplicando CSS al encabezado*/
+header {
+    /*border: 1px solid red*/
+    position: fixed;
+    width: 100%;
+    background-color: #00425A4D;
+    z-index: 10;
 }
 
-#carouselExample
-{
-  padding: 2rem;
+#portada {
+    font-size: 2rem;
+    color: #EFF5F5;
+    margin-left: ;
+    font-weight: bolder;
 }
+
+.navbar {
+    padding: 0;
+}
+
+.container-fluid {
+    background-color: #00425A ;
+}
+
+.navbar-toggler {
+    margin: 10px;
+}
+
+
+/*aplicando CSS a la seccion quienes somos*/
 
 #QuienesSomos {
+}
+
+/*Aplicando comportamiento resposive*/
+/*Comportamiento para tablet*/
+@media (min-width: 768px) {
+    /*aplicando CSS al encabezado*/
+
+#menu {
+ text-align: center;
+ padding-top: 10px;
+}
+
+#opciones {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    background-color:#EFF5F5;
+    grid-template-columns: repeat(5, 1fr);
+}
 }
 
-#qstexto {
-    text-align: center;
-}
+/*comportamiento para dispositivo más grande*/
+@media (min-width: 1200px) {
 
-#elegirnos {
-    background-color: #00425A;
-}
-
-h2 {
-    color:#1F8A70;
 }

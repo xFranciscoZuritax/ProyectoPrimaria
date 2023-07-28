@@ -8,29 +8,48 @@
     <meta name"keywords" content="educacion,escuela,colegio,primaria">
     <meta author="Francisco Zurita">
     <meta name="description" content="UntrefSchool es un instituto de educacion primaria">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/master.css">
 </head>
 <body>
-    <header>
-        <figure><a href="./index.html"><img id="logoUntref" src="./multimedia/img/logoUntref.png" alt="Logo de UntrefSchool"></a></figure>
-        <nav>
-            <ul class="menu">
+    <header id="encabezado">
+        <!--<figure id="logo"><a id="UntrefSchool" href="./index.html"><img src="./multimedia/img/logoUntref.png" alt="logo untref"></a></figure>-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark">
+          <div class="container-fluid">
+            <a id="portada" class="navbar-brand" href="#">UntrefSchool</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#QuienesSomos">Quienes somos</a>
+                <a class="nav-link" href="#elegirnos">¿Por qué elegirnos?</a>
+                <a class="nav-link" href="#Propuesta">Propuesta educativa</a>
+                <a class="nav-link" href="#noticias">Últimas noticias</a>
+                <a class="nav-link" href="./Pages/contacto.html">Contacto</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!--<nav id="menu">
+            <ul id="opciones">
                 <li><a href="#">Quienes somos</a></li>
                 <li><a href="#">¿Por qué elegirnos?</a></li>
                 <li><a href="#">Propuesta educativa</a></li>
                 <li><a href="#">Últimas noticias</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="./Pages/contacto.html">Contacto</a></li>
             </ul>        
-        </nav>
+        </nav>-->
     </header>
     
-    <main>
-        <section id="QuienesSomos">
-            <div id="carouselExample" class="carousel slide" >  
+        <section id="QuienesSomos">                                                                                                                                      
+            <div id="carouselExample" class="carousel slide">  
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="https://images.unsplash.com/photo-1588072432904-843af37f03ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80" class="d-block w-100" alt="...">
+                    <img class="fade-in" src="https://images.unsplash.com/photo-1588072432904-843af37f03ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
                     <img src="https://images.unsplash.com/photo-1588075592405-d3d4f0846961?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29sZWdpbyUyMFBSSU1BUklBfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="...">
@@ -51,7 +70,6 @@
               <article id="qstexto">
               <h2>Bienvenidos a UntrefSchool</h2>
               <p>Somos una escuela humanista, laica, pluralista, ambientalista y bilingüe de calidad con una mirada integral del alumno, altamente personalizada, donde se aprende haciendo. Los docentes y directores somos guías de nuestros alumnos. Trabajamos sobre el ser emocional, físico, intelectual y social con espíritu colaborativo. Compartimos una mirada flexible y abierta al cambio.
-
               </p>
               </article>
         </section>
@@ -60,14 +78,18 @@
           <h2>¿Por qué elegirnos?</h2>
         </section>
 
-        <section id="PropuestaEducativa">
+        <section id="Propuesta">
           <h2>Propuesta Educativa</h2>
+          <video src="https://cdn.coverr.co/videos/coverr-picking-up-a-book-from-the-bookshelf-7954/1080p.mp4" autoplay loop></video>
         </section>
 
-        <section id="Últimas noticias">
-
+        <section id="noticias">
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas consequatur dignissimos consectetur, eius suscipit ipsum! Similique perferendis ipsa obcaecati eum libero officiis illum reiciendis maxime odit quasi praesentium id ipsum veritatis soluta ullam iste, autem mollitia modi ex excepturi dolor. Adipisci necessitatibus numquam tempora quia accusamus, rem iste. Voluptatum ratione ad laudantium libero dignissimos laborum harum eaque ipsam magnam praesentium? At quasi officia, a voluptas, quos accusamus quas repellat pariatur magnam, error quod architecto officiis molestiae enim quaerat iure consequatur sequi consectetur delectus est excepturi! Odit, assumenda, aperiam perspiciatis quas nemo corrupti atque doloremque numquam aspernatur provident, quos dolorem ullam!</p>
         </section>
-    </main>
+
+        <footer id="piePagina">
+
+        </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
