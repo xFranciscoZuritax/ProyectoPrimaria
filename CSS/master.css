@@ -1,9 +1,16 @@
 /*Aplicando CSS global*/
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth; /*Un clásico en cualquier página, da suavidad al scroll*/
+} 
 
 img {
  width: 100%;
@@ -22,21 +29,24 @@ a {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    background-color: #00425A;
 }
+
+
 /*Aplicando CSS al encabezado*/
+
+
 header {
     /*border: 1px solid red*/
-    position: fixed;
     width: 100%;
+    position: fixed;
+    z-index: 1000;
     background-color: #00425A4D;
-    z-index: 10;
 }
 
 #portada {
     font-size: 2rem;
     color: #EFF5F5;
-    margin-left: ;
     font-weight: bolder;
 }
 
@@ -52,11 +62,102 @@ header {
     margin: 10px;
 }
 
+/*aplicando CSS al banner*/
 
-/*aplicando CSS a la seccion quienes somos*/
+#banner {
+    padding-top: 60px;
+    width: 100vw;
+    height: 40vh; /*modificar esto para que se vea bien en pc, 90vh*/
+    background-image: url(/multimedia/img/banner1.jpg);
+    background-size: cover;
+    text-align: center;
+}
+#LemaTotal {
+    width: 80%;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lema {
+    font-weight: bold;
+    color:#FC7300;
+    font-size: 2em;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #EFF5F5;
+} 
+
+/*Seccion quienes somos*/
 
 #QuienesSomos {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 3px solid #EFF5F5;
+    border-radius: 20px;
+    margin: 30px;
+    color: #EFF5F5;
+    scroll-margin-top: 3.8em;
 }
+
+#qstexto {
+    padding-top: 10px;
+}
+
+#bienvenidos {
+    font-weight: bold;
+    color: #FC7300;
+}
+
+/*Seccion por que elegirnos*/
+
+#elegirnos {
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 3px solid #EFF5F5;
+    border-radius: 20px;
+    margin: 30px;
+    color: #EFF5F5;
+    scroll-margin-top: 3.8em
+}
+
+#elegirnos h2 {
+    color: #FC7300;
+    font-weight: bold;
+}
+/*Aplicando CSS al footer*/
+
+#footer {
+  background-color: #00425A;
+  color: #EFF5F5;
+}
+
+#mapa {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#tituloUbicacion {
+    font-weight: bold;
+}
+
+iframe {
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Aplicando comportamiento resposive*/
 /*Comportamiento para tablet*/
