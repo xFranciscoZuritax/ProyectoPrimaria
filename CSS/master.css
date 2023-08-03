@@ -32,6 +32,10 @@ body {
     background-color: #00425A;
 }
 
+.titulosSecciones {
+    font-weight: bold;
+    color: #FC7300;
+}
 
 /*Aplicando CSS al encabezado*/
 
@@ -62,6 +66,10 @@ header {
     margin: 10px;
 }
 
+.opciones {
+    color: #FC7300;
+}
+
 /*aplicando CSS al banner*/
 
 #banner {
@@ -82,7 +90,7 @@ header {
     font-weight: bold;
     color:#FC7300;
     font-size: 2em;
-    border: 2px solid black;
+    border: 2px solid #00425A;
     border-radius: 20px;
     background-color: #EFF5F5;
 } 
@@ -90,6 +98,7 @@ header {
 /*Seccion quienes somos*/
 
 #QuienesSomos {
+    padding-top: 10px;
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
@@ -100,14 +109,6 @@ header {
     scroll-margin-top: 3.8em;
 }
 
-#qstexto {
-    padding-top: 10px;
-}
-
-#bienvenidos {
-    font-weight: bold;
-    color: #FC7300;
-}
 
 /*Seccion por que elegirnos*/
 
@@ -123,10 +124,21 @@ header {
     scroll-margin-top: 3.8em
 }
 
-#elegirnos h2 {
-    color: #FC7300;
-    font-weight: bold;
+/*Seccion Propuesta educativa*/
+
+#carouselExampleCaptions {
+    width: 80vw;    
+    margin-left: auto;
+    margin-right: auto;
 }
+.carousel-control-prev, .carousel-control-next, .carousel-indicators {
+    filter: invert(108%);
+}
+
+#Propuesta {
+    text-align: center;
+}
+
 /*Aplicando CSS al footer*/
 
 #footer {
@@ -148,11 +160,36 @@ iframe {
 }
 
 
+/*Aplicando CSS al contacto*/
+
+#bodyContacto {
+ background-color: #EFF5F5;
+}
+
+main {
+    padding-top: 70px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+form {
+    padding-top: 10px;
+}
 
 
+fieldset input {
+    width: 90%;
+}
 
+fieldset textarea {
+    width: 90%;
+}
 
-
+#botonContacto {
+    margin-top: 10px;
+    background-color: #00425A;
+    color: #EFF5F5;
+}
 
 
 

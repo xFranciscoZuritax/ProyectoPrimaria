@@ -25,24 +25,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#QuienesSomos">Quienes somos</a>
-                <a class="nav-link" href="#elegirnos">¿Por qué elegirnos?</a>
-                <a class="nav-link" href="#Propuesta">Propuesta educativa</a>
-                <a class="nav-link" href="#noticias">Últimas noticias</a>
-                <a class="nav-link" href="./Pages/contacto.html">Contacto</a>
+                <a class="nav-link opciones" aria-current="page" href="#QuienesSomos">Quienes somos</a>
+                <a class="nav-link opciones" href="#elegirnos">¿Por qué elegirnos?</a>
+                <a class="nav-link opciones" href="#Propuesta">Propuesta educativa</a>
+                <a class="nav-link opciones" href="#noticias">Últimas noticias</a>
+                <a class="nav-link opciones" href="./Pages/contacto.html" target="_blank">Contacto</a>
               </div>
             </div>
           </div>
         </nav>
-        <!--<nav id="menu">
-            <ul id="opciones">
-                <li><a href="#">Quienes somos</a></li>
-                <li><a href="#">¿Por qué elegirnos?</a></li>
-                <li><a href="#">Propuesta educativa</a></li>
-                <li><a href="#">Últimas noticias</a></li>
-                <li><a href="./Pages/contacto.html">Contacto</a></li>
-            </ul>        
-        </nav>-->
     </header>
 
      <div id="banner">
@@ -54,49 +45,62 @@
      </div>
 
         <section id="QuienesSomos"> 
-          <article id="qstexto">
-            <h2 id="bienvenidos">¡Bienvenidos!</h2>
-            <p id="textobienvenidos">Somos una escuela humanista, laica, pluralista, ambientalista y bilingüe de calidad con una mirada integral del alumno, altamente personalizada, donde se aprende haciendo.
+            <h2 class="titulosSecciones">¡Bienvenidos!</h2>
+            <p>Somos una escuela humanista, laica, pluralista, ambientalista y bilingüe de calidad con una mirada integral del alumno, altamente personalizada, donde se aprende haciendo.
               <br> <br> 
               Los docentes y directores somos guías de nuestros alumnos. Trabajamos sobre el ser emocional, físico, intelectual y social con espíritu colaborativo. Compartimos una mirada flexible y abierta al cambio.
             </p>
-          </article> 
-          <!--                                                                                                                                   
-          <div id="carouselExample" class="carousel slide">  
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="fade-in" src="https://images.unsplash.com/photo-1588072432904-843af37f03ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1588075592405-d3d4f0846961?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29sZWdpbyUyMFBSSU1BUklBfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1540479859555-17af45c78602?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-           </div>-->    
         </section>
 
         <section id="elegirnos">
-          <h2>¿Por qué elegirnos?</h2>
+          <h2 class="titulosSecciones">¿Por qué elegirnos?</h2>
           <p>Cada generación enfrenta nuevos desafíos y competencias que deben abordarse de manera diferente. Queremos ayudar a nuestros niños, niñas y jóvenes a conocerse mejor, a sentirse seguros de sus fortalezas para permitirse ser curiosos y apasionados por saber más. A ser comprometidos y responsables en el decir y el hacer con la convicción de que el mundo se construye siempre con el otro.</p>
         </section>
 
         <section id="Propuesta">
-          <h2>Propuesta Educativa</h2>
-          <video src="https://cdn.coverr.co/videos/coverr-picking-up-a-book-from-the-bookshelf-7954/1080p.mp4" autoplay loop></video>
+          <h2 class="titulosSecciones">Propuesta Educativa</h2>
+          <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./multimedia/img/IMAGEN_PILARES.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Ser intelectual</h5>
+                  <p>Capacidad de pensar, juzgar y decidir por sí mismo</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </section>
 
         <section id="noticias">
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas consequatur dignissimos consectetur, eius suscipit ipsum! Similique perferendis ipsa obcaecati eum libero officiis illum reiciendis maxime odit quasi praesentium id ipsum veritatis soluta ullam iste, autem mollitia modi ex excepturi dolor. Adipisci necessitatibus numquam tempora quia accusamus, rem iste. Voluptatum ratione ad laudantium libero dignissimos laborum harum eaque ipsam magnam praesentium? At quasi officia, a voluptas, quos accusamus quas repellat pariatur magnam, error quod architecto officiis molestiae enim quaerat iure consequatur sequi consectetur delectus est excepturi! Odit, assumenda, aperiam perspiciatis quas nemo corrupti atque doloremque numquam aspernatur provident, quos dolorem ullam!</p>
+         
         </section>
 
         <footer id="footer">
@@ -105,11 +109,15 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.02887011061!2d-58.5604449!3d-34.603979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20-%20Sede%20Caseros%20I!5e0!3m2!1ses!2sar!4v1690654092389!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </footer>
-        <!--enlaces para utilizar iconos-->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
+
+
+    <!--enlaces para utilizar iconos-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!--enlaces para javascript de boostrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 
