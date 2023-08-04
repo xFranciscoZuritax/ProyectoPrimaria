@@ -150,14 +150,27 @@ header {
 
 /*Aplicando CSS al footer*/
 
-#footer {
+footer {
   background-color: #00425A;
   color: #EFF5F5;
+  padding-top: 10px;
 }
 
+#redes a {
+    font-size: 2rem;
+}
 
+#mapa {
+    text-align: center;
+    width: 80%;
+    margin: auto auto;
+}
 
-/*Aplicando CSS a la página contacto contacto*/
+#haciaArriba {
+    font-size: 2rem;
+}
+
+/*Aplicando CSS a la página contacto*/
 
 #bodyContacto {
  background-color: #EFF5F5;
@@ -197,7 +210,7 @@ input, textarea {
 .labels {
     font-weight: bold;
     display: block;
-    margin: 0.5rem 0;
+    margin-top: 0.5rem;
 }
 
 
@@ -228,11 +241,22 @@ input, textarea {
 }
 }
 
-#footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-   
+#redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}   
+
+#mapa {
+    text-align: center;
+}
+
+#haciaArriba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*comportamiento para dispositivo más grande*/
 @media (min-width: 1200px) {
@@ -259,5 +283,11 @@ input, textarea {
     color: #181823;
     font-weight: bolder;
 }
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  } 
 
 }
