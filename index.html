@@ -16,16 +16,15 @@
 </head>
 <body>
     <header id="encabezado">
-        <!--<figure id="logo"><a id="UntrefSchool" href="./index.html"><img src="./multimedia/img/logoUntref.png" alt="logo untref"></a></figure>-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark">
           <div class="container-fluid">
-            <a id="portada" class="navbar-brand" href="#">UntrefSchool</a>
+            <a id="portada" class="navbar-brand" href="#">UntrefSchool <img id="img-portada" src="./multimedia/img/favicon.png" alt="IconoDeUntref"> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link" aria-current="page" href="#QuienesSomos">Quienes somos</a>
+                <a class="nav-link active" aria-current="page" href="#QuienesSomos">Quienes somos</a>
                 <a class="nav-link" href="#elegirnos">¿Por qué elegirnos?</a>
                 <a class="nav-link" href="#Propuesta">Propuesta educativa</a>
                 <a class="nav-link" href="#noticias">Últimas noticias</a>
@@ -44,7 +43,7 @@
         </div>
      </div>
 
-        <section id="QuienesSomos"> 
+        <section id="QuienesSomos" class="secciones"> 
             <h2 class="titulosSecciones">¡Bienvenidos!</h2>
             <p>Somos una escuela humanista, laica, pluralista, ambientalista y bilingüe de calidad con una mirada integral del alumno, altamente personalizada, donde se aprende haciendo.
               <br> <br> 
@@ -52,12 +51,12 @@
             </p>
         </section>
 
-        <section id="elegirnos">
+        <section id="elegirnos" class="secciones">
           <h2 class="titulosSecciones">¿Por qué elegirnos?</h2>
           <p>Cada generación enfrenta nuevos desafíos y competencias que deben abordarse de manera diferente. Queremos ayudar a nuestros niños, niñas y jóvenes a conocerse mejor, a sentirse seguros de sus fortalezas para permitirse ser curiosos y apasionados por saber más. A ser comprometidos y responsables en el decir y el hacer con la convicción de que el mundo se construye siempre con el otro.</p>
         </section>
 
-        <section id="Propuesta">
+        <section id="Propuesta" class="secciones">
           <h2 class="titulosSecciones">Propuesta Educativa</h2>
           <div id="carouselExampleCaptions" class="carousel slide">
               <div class="carousel-indicators">
@@ -67,24 +66,24 @@
               </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./multimedia/img/IMAGEN_PILARES.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="./multimedia/img/IMAGEN_PILARES.jpg" class="d-block w-100" alt="IMAGEN_PILARES">
+                <div class="carousel-caption d-md-block">
                   <h5>Ser intelectual</h5>
                   <p>Capacidad de pensar, juzgar y decidir por sí mismo</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="." class="d-block w-100" alt="...">
+                <img src="./multimedia/img/IMAGEN_PILARES.jpg" class="d-block w-100" alt="IMAGEN_PILARES">
                 <div class="carousel-caption d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
+                  <h5>Ser emocional</h5>
+                  <p>La educación emocional en nuestra escuela es un pilar</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                <img src="./multimedia/img/IMAGEN_PILARES.jpg" class="d-block w-100" alt="IMAGEN_PILARES">
+                <div class="carousel-caption d-md-block">
+                  <h5>Ser físico</h5>
+                  <p>Fomentamos el gusto por el deporte y el trabajo en equipo</p>
                 </div>
               </div>
             </div>
@@ -99,15 +98,29 @@
           </div>
         </section>
 
-        <section id="noticias">
-         
+        <section id="noticias" class="secciones">
+          <h2 class="titulosSecciones">Noticias</h2>
+          <div class="card" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1540151812223-c30b3fab58e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" class="card-img-top" alt="Niño leyendo en biblioteca">
+            <div class="card-body">
+              <p class="card-text">!Esta semana realizamos la apertura de nuestra nueva biblioteca!</p>
+            </div>
+          </div>
         </section>
 
         <footer id="footer">
-          <div id="mapa">
-          <h2 id="tituloUbicacion">Ubicación del Instituto</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.02887011061!2d-58.5604449!3d-34.603979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20-%20Sede%20Caseros%20I!5e0!3m2!1ses!2sar!4v1690654092389!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div id="redes">
+            <h2>Nuestras redes</h2>
+            <a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
           </div>
+          <div id="mapa">
+            <h2>Ubicación del Instituto</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.02887011061!2d-58.5604449!3d-34.603979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20-%20Sede%20Caseros%20I!5e0!3m2!1ses!2sar!4v1690654092389!5m2!1ses!2sar" width="100%" height="60%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div id="haciaArriba">
+            <a href="#banner"><ion-icon name="arrow-up-circle-outline" style="color: #EFF5F5;"></ion-icon></a>
+            </div>
         </footer>
 
 
