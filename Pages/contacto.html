@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto</title>
-  <link rel="shortcut icon" href="./multimedia/img/logoUntref.png">
+  <link rel="shortcut icon" href="../multimedia/img/favicon.png">
   <meta name"keywords" content="educacion,escuela,colegio,primaria">
   <meta author="Francisco Zurita">
   <meta name="description" content="UntrefSchool es un instituto de educacion primaria">
@@ -29,7 +29,7 @@
               <a class="nav-link" href="#elegirnos">¿Por qué elegirnos?</a>
               <a class="nav-link" href="#Propuesta">Propuesta educativa</a>
               <a class="nav-link" href="#noticias">Últimas noticias</a>
-              <a class="nav-link" href="./Pages/contacto.html" target="_blank">Contacto</a>
+              <a class="nav-link" href="./Pages/contacto.html">Contacto</a>
             </div>
           </div>
         </div>
@@ -39,13 +39,11 @@
     <main>
        <h2 class="titulosSecciones">Formulario de contacto</h2>
        <p>Envíenos su consulta aquí. <br> Sus datos se utilizarán únicamente para responder su solicitud.</p>
-       <form action="">
-        <fieldset>
-           <input name="nombre" type="text" placeholder="Nombre completo">
-           <input name="email" type="email" placeholder="Email">
-           <input name="numero" type="number" placeholder="Teléfono">
-           <textarea name="consulta" placeholder="Consulta"></textarea> 
-        </fieldset>
+       <form id="formulario" action="https://formsubmit.co/algoritmoinformatico@gmail.com" method="POST">
+           <label id="nombre-label" class="labels" for="nombre">Nombre completo <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre completo" required></label>
+           <label id="email-label" class="labels" for="email">Email <input id="email" name="email" type="email" placeholder="Ingrese su email" required></label>
+           <label id="numero-label" class="labels" for="numero" >Número </label><input id="numero" name="numero" type="number" placeholder="Teléfono" required></label>
+           <label id="consulta-label" class="labels" for="consulta" >¿Alguna duda o consulta? (opcional)<textarea id="consulta" name="consulta" placeholder="Consulta"></textarea></label>
         <button id="botonContacto" type="submit" class="btn btn-lg btn-block">Enviar mensaje</button>
        </form>
     </main>

@@ -29,7 +29,7 @@ a {
 }
 
 body {
-    background-color: #00425A;
+    background-color: #EFF5F5;
 }
 
 .titulosSecciones {
@@ -66,17 +66,15 @@ header {
     margin: 10px;
 }
 
-.opciones {
-    color: #FC7300;
-}
 
 /*aplicando CSS al banner*/
 
 #banner {
     padding-top: 60px;
     width: 100vw;
-    height: 40vh; /*modificar esto para que se vea bien en pc, 90vh*/
+    min-height: 40vh; /*modificar esto para que se vea bien en pc, 90vh*/
     /*background-image: url(../multimedia/img/banner1.jpg);*/
+    max-height: 90vh;
     background-size: cover;
     text-align: center;
 }
@@ -102,10 +100,10 @@ header {
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
-    border: 3px solid #EFF5F5;
+    border: 3px solid #181823;
     border-radius: 20px;
     margin: 30px;
-    color: #EFF5F5;
+    color: #181823;
     scroll-margin-top: 3.8em;
 }
 
@@ -117,10 +115,10 @@ header {
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
-    border: 3px solid #EFF5F5;
+    border: 3px solid #181823;
     border-radius: 20px;
     margin: 30px;
-    color: #EFF5F5;
+    color: #181823;
     scroll-margin-top: 3.8em
 }
 
@@ -137,6 +135,7 @@ header {
 
 #Propuesta {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 /*Aplicando CSS al footer*/
@@ -160,7 +159,7 @@ iframe {
 }
 
 
-/*Aplicando CSS al contacto*/
+/*Aplicando CSS a la página contacto contacto*/
 
 #bodyContacto {
  background-color: #EFF5F5;
@@ -168,28 +167,42 @@ iframe {
 
 main {
     padding-top: 70px;
-    padding-left: 10px;
     text-align: center;
 }
 
 form {
     padding-top: 10px;
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+
 }
 
-
-fieldset input {
-    width: 90%;
+label {
+    display: block;
 }
 
-fieldset textarea {
-    width: 90%;
+input, textarea {
+    width: 100%;
+    margin-top: 0.5rem;
 }
+
 
 #botonContacto {
+    font-weight: bold;
     margin-top: 10px;
     background-color: #00425A;
-    color: #EFF5F5;
+    color:#EFF5F5;
 }
+
+.labels {
+    font-weight: bold;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+
 
 
 
@@ -200,6 +213,16 @@ fieldset textarea {
 /*Comportamiento para tablet*/
 @media (min-width: 768px) {
     /*aplicando CSS al encabezado*/
+
+    #LemaTotal {
+        padding: 2%;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-content: center;
+     }
+   
 
 #menu {
  text-align: center;
@@ -214,5 +237,12 @@ fieldset textarea {
 
 /*comportamiento para dispositivo más grande*/
 @media (min-width: 1200px) {
-
+ #LemaTotal {
+    padding: 2%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-content: center;
+ }
 }
